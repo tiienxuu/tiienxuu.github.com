@@ -1,0 +1,118 @@
+#my_menu {
+	background-color: green;
+	text-align: center;
+	padding: 80px;
+	margin: 0px;
+}
+nav {
+	background-color: black;
+	overflow: hidden;
+}
+nav a {
+	color: white;
+	padding: 14px 20px;
+	display: block ;
+	text-align: center;
+	text-decoration: none ;
+}
+nav a.menu_left {
+	float: left;
+}
+
+nav a.menu_right {
+	float: right;
+}
+
+nav a:hover {
+	color: black;
+	background-color: gray;
+}
+
+
+#left_side {
+	flex: 30%;
+	background-color: #f1f1f1;
+	padding: 10px 20px;
+}
+
+#right_side {
+	flex: 70%;
+	padding: 10px 20px;
+
+}
+#container {
+	display: flex;
+	flex-wrap: nowrap;
+}
+
+.imgitemx {
+	width: 90%;
+}
+
+.item {
+	flex: 33%;
+	text-align: center;
+}
+
+#xbox {
+	display: flex;
+	flex-wrap: wrap;
+}
+
+.titleitemx {
+	font-size: 150%;
+	font-weight: bold;
+	padding: 10px 10px 0 px;
+}
+.describeitem {
+	text-align: center;
+	margin: 0px 10px 10px 10px;
+}
+footer {
+	background-color: black;
+	padding:10px 20px;
+	text-align: center;
+}
+
+footer p {
+	color: white;
+}
+
+
+
+table {
+	border-collapse: collapse;
+	width: 100%;
+}
+
+table td, table th {
+	border: 1px solid #ddd;
+	padding: 8px;
+}
+
+table tr:nth-child(even){background-color: #f2f2f2;}
+
+table th {
+	padding-top: 12px;
+	padding-bottom: 12px;
+	text-align: left;
+	background-color: #04AA6D;
+	color: white;
+}
+
+
+@media(max-width: 800px) {
+	#left_side {
+		flex: 100%;
+	}
+	#right_side {
+		flex: 100%;
+	}
+	#container {
+		flex-wrap: wrap;
+	}
+	.item {
+		flex: 50%;
+	}
+
+}
